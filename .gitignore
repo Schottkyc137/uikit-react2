@@ -1,0 +1,5 @@
+# generated output files
+/dist
+
+# Files specific to Code editors
+/.idea
