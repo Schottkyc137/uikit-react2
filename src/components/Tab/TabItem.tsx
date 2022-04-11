@@ -10,6 +10,9 @@ export function TabItem({
   children,
   ...rest
 }: TabItemProps) {
+  const resolvedTitle =
+    typeof title === 'string' ? <a href="/#">{title}</a> : title;
+
   return (
     <>
       <li
@@ -20,7 +23,7 @@ export function TabItem({
         )}
         {...rest}
       >
-        {title}
+        {resolvedTitle}
       </li>
     </>
   );

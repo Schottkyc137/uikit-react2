@@ -5,55 +5,60 @@
  * }</pre>
  */
 export namespace animation {
+  const prefix = 'uk-animation-';
+  const slidePrefix = prefix + 'slide-';
+
   const smallSlideAnimation = {
-    top: 'uk-animation-slide-top-small',
-    bottom: 'uk-animation-slide-bottom-small',
-    left: 'uk-animation-slide-left-small',
-    right: 'uk-animation-slide-right-small',
+    top: slidePrefix + 'top-small',
+    bottom: slidePrefix + 'bottom-small',
+    left: slidePrefix + 'left-small',
+    right: slidePrefix + 'right-small',
   };
 
   const mediumSlideAnimation = {
-    top: 'uk-animation-slide-top-medium',
-    bottom: 'uk-animation-slide-bottom-medium',
-    left: 'uk-animation-slide-left-medium',
-    right: 'uk-animation-slide-right-medium',
+    top: slidePrefix + 'top-medium',
+    bottom: slidePrefix + 'bottom-medium',
+    left: slidePrefix + 'left-medium',
+    right: slidePrefix + 'right-medium',
   };
 
   const slideAnimation = {
-    top: 'uk-animation-slide-top',
-    bottom: 'uk-animation-slide-bottom',
-    left: 'uk-animation-slide-left',
-    right: 'uk-animation-slide-right',
+    top: slidePrefix + 'top',
+    bottom: slidePrefix + 'bottom',
+    left: slidePrefix + 'left',
+    right: slidePrefix + 'right',
     small: smallSlideAnimation,
     medium: mediumSlideAnimation,
   };
 
   const scaleAnimation = {
-    up: 'uk-animation-scale-up',
-    down: 'uk-animation-scale-down',
+    up: prefix + 'scale-up',
+    down: prefix + 'scale-down',
   };
 
-  export const fade = 'uk-animation-fade';
+  export const fade = prefix + 'fade';
   export const scale = scaleAnimation;
-  export const shake = 'uk-animation-shake';
-  export const stroke = 'uk-animation-stroke';
+  export const shake = prefix + 'shake';
+  export const stroke = prefix + 'stroke';
   export const slide = slideAnimation;
 
-  export const reversed: string = 'uk-animation-reverse';
+  export const reversed: string = prefix + 'reverse';
 
-  export const fast: string = 'uk-animation-fast';
+  export const fast: string = prefix + 'fast';
 
-  export const kenburns: string = 'uk-animation-kenburns';
+  export const kenburns: string = prefix + 'kenburns';
+
+  const originPrefix = 'uk-transform-origin-';
 
   export const origin = {
-    topLeft: 'uk-transform-origin-top-left',
-    topCenter: 'uk-transform-origin-top-center',
-    topRight: 'uk-transform-origin-top-right',
-    centerLeft: 'uk-transform-origin-center-left',
-    centerRight: 'uk-transform-origin-center-right',
-    bottomLeft: 'uk-transform-origin-bottom-left',
-    bottomCenter: 'uk-transform-origin-bottom-center',
-    bottomRight: 'uk-transform-origin-bottom-right',
+    topLeft: originPrefix + 'top-left',
+    topCenter: originPrefix + 'top-center',
+    topRight: originPrefix + 'top-right',
+    centerLeft: originPrefix + 'center-left',
+    centerRight: originPrefix + 'center-right',
+    bottomLeft: originPrefix + 'bottom-left',
+    bottomCenter: originPrefix + 'bottom-center',
+    bottomRight: originPrefix + 'bottom-right',
   };
 
   /**
