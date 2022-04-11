@@ -1,5 +1,12 @@
 # generated output files
-/dist
+/lib
 
 # Files specific to Code editors
 /.idea
+
+
+#
+node_modules
+
+.local-pack
+/coverage/
