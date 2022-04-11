@@ -19,8 +19,8 @@
   "author": "",
   "license": "ISC",
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "uikit": "^3.13.7"
   },
   "dependencies": {
@@ -29,9 +29,9 @@
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
-    "@storybook/addon-controls": "^6.4.20",
-    "@storybook/react": "^6.4.20",
-    "@testing-library/react": "^13.0.0",
+    "@storybook/addon-controls": "^6.4.21",
+    "@storybook/react": "^6.4.21",
+    "@testing-library/react": "^12.1.4",
     "@types/jest": "^27.4.1",
     "@types/lodash": "^4.14.181",
     "@types/node": "^17.0.23",
