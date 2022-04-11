@@ -1,0 +1,47 @@
+const UIKit = require('uikit');
+const Icons = require('uikit/dist/js/uikit-icons');
+//@ts-ignore
+UIKit.use(Icons);
+
+import 'uikit/dist/css/uikit.min.css';
+
+export * from './components/Accordion/index';
+export * from './components/Alert/index';
+export * from './components/Align/align';
+export * from './components/Animation/animation';
+export * from './components/Article/index';
+export * from './components/Background/background';
+export * from './components/Badge/index';
+export * from './components/Breadcrumb/index';
+export * from './components/Button/index';
+export * from './components/Card/index';
+export * from './components/Column/index';
+export * from './components/Comment/index';
+export * from './components/Container/index';
+export * from './components/Countdown/index';
+export * from './components/DescriptionList/index';
+export * from './components/Divider/index';
+export * from './components/Dotnav/index';
+export * from './components/Drop/index';
+export * from './components/Dropdown/index';
+export * from './components/Form/index';
+export * from './components/Icon/index';
+export * from './components/IconNav/index';
+export * from './components/Label/index';
+export * from './components/Leader/index';
+export * from './components/Lightbox/index';
+export * from './components/List/index';
+export * from './components/Marker/index';
+export * from './components/Modal/index';
+export * from './components/Nav/index';
+export * from './components/Navbar/index';
+export * from './components/Notification/index';
+export * from './components/OffCanvas/index';
+export * from './components/Overlay/index';
+export * from './components/Pagination/index';
+export * from './components/Placeholder/index';
+export * from './components/Progress/index';
+export * from './components/Scroll/index';
+export * from './components/Section/index';
+export * from './components/Spinner/index';
+export * from './components/Tab/index';

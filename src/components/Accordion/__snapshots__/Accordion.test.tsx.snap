@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion renders a snapshot 1`] = `
+<ul
+  class="uk-accordion"
+  data-testid="accordion"
+>
+  <li
+    class="uk-open"
+  >
+    <a
+      class="uk-accordion-title"
+      href="/#"
+    />
+    <div
+      class="uk-accordion-content"
+    >
+      Panel
+    </div>
+  </li>
+</ul>
+`;

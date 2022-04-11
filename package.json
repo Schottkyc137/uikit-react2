@@ -2,15 +2,47 @@
   "name": "uikit-react2",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "files": [
+    "/lib"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "test": "jest",
+    "storybook": "start-storybook"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "uikit": "^3.13.7"
+  },
+  "dependencies": {
+    "loadsh": "^0.0.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@storybook/addon-controls": "^6.4.20",
+    "@storybook/react": "^6.4.20",
+    "@testing-library/react": "^13.0.0",
+    "@types/jest": "^27.4.1",
+    "@types/lodash": "^4.14.181",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@types/uikit": "^3.3.2",
+    "babel-jest": "^27.5.1",
+    "intersection-observer": "^0.12.0",
+    "jest": "^27.5.1",
+    "local-package-publisher": "^1.0.4",
+    "prettier": "2.6.1",
+    "ts-node": "^10.7.0"
   }
 }
