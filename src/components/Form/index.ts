@@ -5,3 +5,4 @@ export * from './FieldSet';
 export * from './Form';
 export * from './FormControl';
 export * from './Legend';
+export * from './FormProps';
